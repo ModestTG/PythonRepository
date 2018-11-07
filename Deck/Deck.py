@@ -5,7 +5,7 @@ class Deck:
 		self.cards = []
 
 	def addCard(self, card):
-		if self.cards < self.size:
+		if len(self.cards) < self.size:
 			self.cards.append(card)
 		else:
 			print("Deck is full!")
