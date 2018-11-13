@@ -1,6 +1,7 @@
 from html.parser import HTMLParser
 import os
 
+
 class MyHTMLParser(HTMLParser):
 	def handle_starttag(self, tag, attrs):
 		outFile = open("F:\Student Data\Temp\\" + os.path.splitext(file)[0] + ".txt", "a")
