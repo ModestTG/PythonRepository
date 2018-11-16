@@ -16,8 +16,8 @@ mac1_mac_addr = mac1[16]
 mac2_mac_addr = mac2[17]
 mac3_mac_addr = mac3[15]
 
-print("{:>20} {:>20}".format("IP ADDR","MAC ADDRESS"))
-print("{:>20} {:>20}".format("-" * 20,"-" * 20))
+print("{:>20} {:>20}".format("IP ADDR", "MAC ADDRESS"))
+print("{:>20} {:>20}".format("-" * 20, "-" * 20))
 print("{:>20} {:>20}".format(mac1_ip_addr, mac1_mac_addr))
 print("{:>20} {:>20}".format(mac2_ip_addr, mac2_mac_addr))
 print("{:>20} {:>20}".format(mac2_ip_addr, mac3_mac_addr))

@@ -27,12 +27,7 @@ class MyHTMLParser(HTMLParser):
 			if self.get_starttag_text() == 'deckname':
 				outFile.write("NAME:" + os.path.splitext(file)[0] + "\n")
 
-
-
-
 parser = MyHTMLParser()
-
-
 for file in os.listdir("E:\Google Drive\Miscellaneous\Decks - Cockatrice"):
 	if file.endswith(".cod"):
 		inFile = open("E:\Google Drive\Miscellaneous\Decks - Cockatrice\\" + file, "r")

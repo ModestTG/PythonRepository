@@ -12,5 +12,3 @@ class Deck:
 
 	def size(self):
 		return len(self.cards)
-
-

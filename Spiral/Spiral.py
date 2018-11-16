@@ -1,17 +1,17 @@
 def spiral(n):
     def spiral_part(x, y, n):
-        if x == -1 and y == 0:
+        if x == - 1 and y == 0:
             return -1
-        if y == (x+1) and x < (n // 2):
-            return spiral_part(x-1, y-1, n-1) + 4*(n-y)
-        if x < (n-y) and y <= x:
-            return spiral_part(y-1, y, n) + (x-y) + 1
-        if x >= (n-y) and y <= x:
-            return spiral_part(x, y-1, n) + 1
-        if x >= (n-y) and y > x:
-            return spiral_part(x+1, y, n) + 1
-        if x < (n-y) and y > x:
-            return spiral_part(x, y-1, n) - 1
+        if y == (x + 1) and x < (n // 2):
+            return spiral_part(x - 1, y - 1, n - 1) + 4 * (n - y)
+        if x < (n - y) and y <= x:
+            return spiral_part(y - 1, y, n) + (x - y) + 1
+        if x >= (n - y) and y <= x:
+            return spiral_part(x, y - 1, n) + 1
+        if x >= (n - y) and y > x:
+            return spiral_part(x + 1, y, n) + 1
+        if x < (n - y) and y > x:
+            return spiral_part(x, y - 1, n) - 1
 
     array = [[0] * n for j in range(n)]
     for x in range(n):

@@ -2,4 +2,4 @@ myHTML = open("E:\Google Drive\Miscellaneous\Decks - Cockatrice\Ancient Wilds.co
 page = myHTML.read()
 for item in page.split("</card>"):
 	if "<card>" in item:
-		print(item[ item.find("<card>")+len("<card>") : ])
+		print(item[item.find("<card>") + len("<card>"):])
