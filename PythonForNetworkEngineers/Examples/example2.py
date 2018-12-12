@@ -14,4 +14,3 @@ print("-" * 80)
 print(f"{ip_addr1:20}")  # Only available in Python 3.6.x and higher
 print("-" * 80)
 print("\n")
-print("test for brandon")
