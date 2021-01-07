@@ -11,4 +11,4 @@ print("Cisco Model?")
 print("cisco" in model_number.lower())
 print("\nModel 881?")
 print("881" in model_number)
-print(f"\nSerial: {serial_number}\nModel: {model_number}")
+print(f"\nSerial: {serial_number}\nModel: {model_number}")  # Formatting style only available in Python 3.6 and newer
