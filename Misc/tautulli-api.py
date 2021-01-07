@@ -1,7 +1,9 @@
 import requests
 import json
 
-api_key = "87d3d012d4324de4bee3bf20c31d8ec5"
+api_key = ""
+with open("api.txt", "r") as f:
+	api_key = f.read()
 
 # user_data = requests.get(url2)
 # user_parsed_data = json.loads(user_data.text)
