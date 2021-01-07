@@ -3,7 +3,7 @@ import json
 
 api_key = ""
 with open("api.txt", "r") as f:
-	api_key = f.read()
+	api_key = str.strip(f.read())
 
 # user_data = requests.get(url2)
 # user_parsed_data = json.loads(user_data.text)
