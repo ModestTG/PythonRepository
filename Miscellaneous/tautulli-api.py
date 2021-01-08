@@ -48,7 +48,7 @@ def print_data(*watch_lists):
 	for i in watch_lists:
 		for j in i:
 			print_list.append(j)
-	print(json.dumps(print_list, indent=4))
+	print(print_list)
 
 
 print_data(get_watched_time(10000, get_user_list()), get_watched_time(7, get_user_list()))
