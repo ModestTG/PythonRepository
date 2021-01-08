@@ -5,7 +5,8 @@ import json
 
 # API key on file on local machine for security
 api_key = ""
-with open("api.txt", "r") as f:
+api_prepath="/home/docker/code" # Update this if run on different machine
+with open(api_prepath + "/PythonRepository/Miscellaneous/api.txt", "r") as f:
 	api_key = str.strip(f.read())
 	
 def get_watched_time(days, userlist):
