@@ -5,7 +5,7 @@ import json
 
 # API key on file on local machine for security
 api_key = ""
-api_prepath="/home/docker/code" # Update this if run on different machine
+api_prepath="/home/docker/code/" # Update this if run on different machine
 with open(api_prepath + "PythonRepository/Miscellaneous/api.txt", "r") as f:
 	api_key = str.strip(f.read())
 	
